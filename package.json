@@ -1,31 +1,51 @@
 {
   "name": "@sebastienrousseau/markdownlint-config",
-  "version": "0.0.1",
-  "description": "Markdownlint Configuration Files and rules",
-  "keywords": [
-    "markdownlint"
-  ],
+  "version": "1.0.0",
+  "description": "Shareable markdownlint configuration rules adhering to 2026 standards",
   "author": "Sebastien Rousseau <sebastienrousseau@users.noreply.github.com>",
-  "homepage": "https://crypto-service.dev",
   "license": "ISC",
-  "main": "index.js",
+  "homepage": "https://github.com/sebastienrousseau/markdownlint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastienrousseau/markdownlint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sebastienrousseau/markdownlint-config/issues"
+  },
+  "keywords": [
+    "markdown",
+    "markdownlint",
+    "markdownlint-config",
+    "style-guide",
+    "linter"
+  ],
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
   "files": [
-    "index.js"
+    "index.js",
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts"
   ],
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sebastienrousseau/crypto-service.git"
-  },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "node test/test.js",
+    "lint": "node test/test.js"
   },
-  "bugs": {
-    "url": "https://github.com/sebastienrousseau/crypto-service/issues"
+  "peerDependencies": {
+    "markdownlint": ">=0.25.0"
   },
   "devDependencies": {
-    "markdownlint": "^0.25.1"
+    "markdownlint": "^0.34.0"
   }
 }
