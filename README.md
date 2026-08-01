@@ -1,7 +1,7 @@
 <!-- SPDX-License-Identifier: ISC -->
 
 <p align="center">
-  <img src="https://cloudcdn.pro/beonux/v1/logos/beonux.svg" alt="markdownlint-config logo" width="128" />
+  <img src="./markdownlint-config.svg" alt="markdownlint-config logo" width="128" />
 </p>
 
 <h1 align="center">@sebastienrousseau/markdownlint-config</h1>
