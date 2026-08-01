@@ -34,7 +34,8 @@
     "index.mjs",
     "index.cjs",
     "index.d.ts",
-    "markdownlint-config.svg"
+    "markdownlint-config.svg",
+    "LICENSE"
   ],
   "publishConfig": {
     "access": "public"
