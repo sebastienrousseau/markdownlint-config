@@ -49,6 +49,6 @@
     "markdownlint": ">=0.25.0"
   },
   "devDependencies": {
-    "markdownlint": "^0.34.0"
+    "markdownlint": "^0.41.1"
   }
 }
