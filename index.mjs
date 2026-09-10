@@ -1,37 +1,14 @@
+// SPDX-FileCopyrightText: 2026 Sebastien Rousseau <sebastian.rousseau@gmail.com>
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 /**
- * Modern Markdownlint ESM Configuration
+ * ESM entrypoint.
+ *
+ * The configuration is defined once, in `index.cjs`, and re-exported here so the
+ * two module systems cannot drift apart. Node resolves a CommonJS default import
+ * to `module.exports`, which is exactly the value consumers of the CJS entry get.
  */
-export default {
-  "default": true,
-  "ignore_front_matter": true,
-  "MD003": {
-    "style": "atx"
-  },
-  "MD004": {
-    "style": "dash"
-  },
-  "MD007": {
-    "indent": 4
-  },
-  "MD012": false,
-  "MD013": false,
-  "MD029": {
-    "style": "one"
-  },
-  "MD030": {
-    "ul_single": 1,
-    "ol_single": 2,
-    "ul_multi": 2,
-    "ol_multi": 1
-  },
-  "MD033": false,
-  "MD035": {
-    "style": "---"
-  },
-  "MD041": false,
-  "MD044": false,
-  "MD046": false,
-  "MD048": {
-    "style": "backtick"
-  }
-};
+
+import config from "./index.cjs";
+
+export default config;

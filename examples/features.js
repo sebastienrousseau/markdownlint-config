@@ -1,10 +1,15 @@
+// SPDX-FileCopyrightText: 2026 Sebastien Rousseau <sebastian.rousseau@gmail.com>
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 /**
  * 100% Feature Showcase for @sebastienrousseau/markdownlint-config
  */
 const config = require("../index.cjs");
 const assert = require("assert");
 
-console.log("=== 100% Feature Showcase: @sebastienrousseau/markdownlint-config ===");
+console.log(
+  "=== 100% Feature Showcase: @sebastienrousseau/markdownlint-config ===",
+);
 assert.strictEqual(config.default, true);
 assert.strictEqual(config.ignore_front_matter, true);
 assert.strictEqual(config.MD013, false);
