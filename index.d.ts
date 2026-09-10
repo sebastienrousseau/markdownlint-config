@@ -1,6 +1,7 @@
+// SPDX-FileCopyrightText: 2026 Sebastien Rousseau <sebastian.rousseau@gmail.com>
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 export interface MarkdownlintConfig {
-  default?: boolean;
-  ignore_front_matter?: boolean;
   [key: string]: unknown;
 }
 
