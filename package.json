@@ -64,5 +64,8 @@
     "shape": "object",
     "presets": [],
     "validate": "markdownlint"
+  },
+  "overrides": {
+    "katex": "0.18.11"
   }
 }

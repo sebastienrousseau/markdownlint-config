@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Security
+
+- An npm `overrides` entry moves KaTeX to 0.18.11 (GHSA-238p-pmpm-9mq7,
+  fixed in 0.18.2). markdownlint pulls KaTeX in through
+  micromark-extension-math, whose `^0.16.0` range has no fixed release;
+  markdownlint only uses that package's syntax extension, never the KaTeX
+  renderer. Config 097fb1a's advisory gate audits at low and failed on it.
+
 ## [0.0.7] - 2026-09-10
 
 ### Added
