@@ -6,7 +6,7 @@
 class MarkdownlintConfig < Formula
   desc "Shareable markdownlint configuration rules adhering to 2026 standards"
   homepage "https://github.com/sebastienrousseau/markdownlint-config"
-  url "https://registry.npmjs.org/@sebastienrousseau/markdownlint-config/-/markdownlint-config-0.0.7.tgz"
+  url "https://registry.npmjs.org/@sebastienrousseau/markdownlint-config/-/markdownlint-config-0.0.9.tgz"
   license any_of: ["Apache-2.0", "MIT"]
 
   depends_on "node"
