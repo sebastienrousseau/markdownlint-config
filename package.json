@@ -53,7 +53,7 @@
     "markdownlint": ">=0.25.0"
   },
   "devDependencies": {
-    "@sebastienrousseau/config-kit": "^0.0.8",
+    "@sebastienrousseau/config-kit": "^0.0.9",
     "markdownlint": "^0.42.0"
   },
   "engines": {
